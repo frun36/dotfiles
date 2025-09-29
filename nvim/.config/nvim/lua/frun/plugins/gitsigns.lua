@@ -55,7 +55,7 @@ return {
             vim.keymap.set('n', '<leader>gs', gitsigns.stage_hunk, { desc = '[g]it [s]tage hunk' })
             vim.keymap.set('n', '<leader>gr', gitsigns.reset_hunk, { desc = '[g]it [r]eset hunk' })
             vim.keymap.set('n', '<leader>gR', gitsigns.reset_buffer, { desc = '[g]it [R]eset buffer' })
-            vim.keymap.set('n', '<leader>gb', gitsigns.blame_line, { desc = '[g]it [b]lame line' })
+            vim.keymap.set('n', '<leader>gB', gitsigns.blame_line, { desc = '[g]it [B]lame line' })
         end
     }
 }

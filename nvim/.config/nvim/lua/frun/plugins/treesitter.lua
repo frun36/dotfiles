@@ -8,6 +8,7 @@ return {
                 "javascript",
                 "cpp",
                 "rust",
+                "latex",
                 -- The five parsers below should always be installed
                 "lua",
                 "vim",

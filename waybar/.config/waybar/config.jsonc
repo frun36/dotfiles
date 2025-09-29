@@ -139,14 +139,14 @@
         // "pulseaudio#microphone",
         // "backlight",
         // "hyprland/language",
-        "network",
-        "bluetooth",
+        "tray",
+        // "network",
+        // "bluetooth",
         "pulseaudio",
         "cpu",
         "memory",
         "battery",
         "clock",
-        "tray",
     ],
 
     "hyprland/workspaces": {
@@ -247,8 +247,8 @@
     "battery": {
         "states": {
             "good": 90,
-            "warning": 30,
-            "critical": 15
+            "warning": 40,
+            "critical": 20
         },
         "interval": 10,
         "format": "{icon} {capacity}%",
