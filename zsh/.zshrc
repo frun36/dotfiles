@@ -1,8 +1,3 @@
-# zsh options
-setopt HIST_IGNORE_ALL_DUPS
-setopt SHARE_HISTORY
-bindkey -v
-
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
@@ -20,6 +15,7 @@ autoload -Uz _zinit
 # Plugins
 zinit light olets/zsh-abbr
 zinit light zsh-users/zsh-syntax-highlighting
+zinit snippet https://www.github.com/ohmyzsh/ohmyzsh/blob/master/lib/history.zsh
 
 # Environment variables
 export EDITOR=nvim
@@ -48,4 +44,5 @@ eval "$(fzf --zsh)"
 # Prompt
 eval "$(starship init zsh)"
 
-
+# zsh options
+bindkey -v
