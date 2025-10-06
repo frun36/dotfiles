@@ -23,6 +23,9 @@ export EDITOR=nvim
 # Aliases and abbreviations
 alias ls="ls --color"
 alias la="ls -lah"
+alias ll="ls -lh"
+
+alias ssh="kitten ssh"
 
 if [[ -n "$BROWSER" ]]; then
     _browser_fts=(htm html de org net com at cx nl se dk)
