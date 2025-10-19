@@ -12,18 +12,30 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# zsh options
+bindkey -v
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt share_history
+setopt inc_append_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+
 # Plugins
 zinit light olets/zsh-abbr
 zinit light zsh-users/zsh-syntax-highlighting
-zinit snippet https://www.github.com/ohmyzsh/ohmyzsh/blob/master/lib/history.zsh
+zinit light jeffreytse/zsh-vi-mode
+
+source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # Environment variables
 export EDITOR=nvim
 
 # Aliases and abbreviations
 alias ls="ls --color"
-alias la="ls -lah"
-alias ll="ls -lh"
 
 alias ssh="kitten ssh"
 
@@ -42,10 +54,9 @@ function y() {
 
 eval "$(zoxide init --cmd cd zsh)"
 
-eval "$(fzf --zsh)"
+function zvm_after_init() {
+    eval "$(fzf --zsh)"
+}
 
 # Prompt
 eval "$(starship init zsh)"
-
-# zsh options
-bindkey -v

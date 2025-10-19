@@ -16,5 +16,5 @@ sunrise = "06:00:00"            # Time to transition to day mode (HH:MM:SS) - ig
 transition_duration = 45        # Transition duration in minutes (5-120)
 
 #[Geolocation-based transitions]
-latitude = 46.202216            # Geographic latitude (auto-detected on first run)
-longitude = 6.145692            # Geographic longitude (use 'sunsetr --geo' to change)
+latitude = 50.083333            # Geographic latitude (auto-detected on first run)
+longitude = 19.916666           # Geographic longitude (use 'sunsetr --geo' to change)

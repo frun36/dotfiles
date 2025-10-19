@@ -25,8 +25,8 @@ return {
         vim.keymap.set("n", "<leader>h7", function() harpoon:list():select(7) end, { desc = "Harpoon: go to file 7" })
         vim.keymap.set("n", "<leader>h8", function() harpoon:list():select(8) end, { desc = "Harpoon: go to file 8" })
         vim.keymap.set("n", "<leader>h9", function() harpoon:list():select(9) end, { desc = "Harpoon: go to file 9" })
-        vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end, { desc = "Harpoon: Previous file" })
-        vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end, { desc = "Harpoon: Next file" })
+        vim.keymap.set("n", "<leader>hp", function() harpoon:list():prev() end, { desc = "Harpoon: Previous file" })
+        vim.keymap.set("n", "<leader>hn", function() harpoon:list():next() end, { desc = "Harpoon: Next file" })
         -- require("telescope").load_extension("harpoon")
     end,
 }
