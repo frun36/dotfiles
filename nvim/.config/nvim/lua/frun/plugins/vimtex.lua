@@ -15,6 +15,7 @@ return {
         "-file-line-error",
         "-interaction=nonstopmode",
         "-synctex=1",
+        "-outdir=target/"
       },
     }
   end,

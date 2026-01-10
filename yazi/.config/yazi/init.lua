@@ -1,53 +1,71 @@
 require("yatline"):setup({
-    show_background = true,
+	show_background = false,
 
-    status_line = {
-        left = {
-            section_a = {
-                { type = "string", custom = false, name = "tab_mode" },
-            },
-            section_b = {
-                { type = "string", custom = false, name = "hovered_size" },
-            },
-            section_c = {
-                { type = "string", custom = false, name = "hovered_name" },
-            }
-        },
-        right = {
-            section_a = {
-                { type = "string", custom = false, name = "cursor_position" },
-            },
-            section_b = {
-                { type = "string", custom = false, name = "cursor_percentage" },
-            },
-            section_c = {
-                { type = "coloreds", custom = false, name = "permissions" },
-            }
-        },
+	header_line = {
+		left = {
+			section_a = {
+				{ type = "line", custom = false, name = "tabs", params = { "left" } },
+			},
+			section_b = {},
+			section_c = {
+				{ type = "string", custom = false, name = "tab_path" },
+			},
+		},
+		right = {
+			section_a = {},
+			section_b = {},
+			section_c = {},
+		},
+	},
 
-    },
-    style_a = {
-        fg = "#1e2326",
-        bg_mode = {
-            normal = "#a7c080",
-            select = "#e67e80",
-            un_set = "#d3c6aa",
-        }
-    },
-    style_b = {
-        bg = "#374145",
-        fg = "#a7c080",
-    },
-    style_c = {
-        bg = "#272e33",
-        fg = "#7a8478",
-    },
+	tab_width = 0,
+
+	status_line = {
+		left = {
+			section_a = {
+				{ type = "string", custom = false, name = "tab_mode" },
+			},
+			section_b = {
+				{ type = "string", custom = false, name = "hovered_size" },
+			},
+			section_c = {
+				{ type = "string", custom = false, name = "hovered_name" },
+			},
+		},
+		right = {
+			section_a = {
+				{ type = "string", custom = false, name = "cursor_position" },
+			},
+			section_b = {
+				{ type = "string", custom = false, name = "cursor_percentage" },
+			},
+			section_c = {
+				{ type = "coloreds", custom = false, name = "permissions" },
+			},
+		},
+	},
+	style_a = {
+		fg = "#1e2326",
+		bg_mode = {
+			normal = "#a7c080",
+			select = "#e67e80",
+			un_set = "#d3c6aa",
+		},
+	},
+	style_b = {
+		bg = "#374145",
+		fg = "#a7c080",
+	},
+	style_c = {
+		bg = "#272e33",
+		fg = "#7a8478",
+	},
 })
 
 require("git"):setup()
 
 require("relative-motions"):setup({
-    show_numbers = "relative",
-    show_motion = true,
-    enter_mode = "first"
+	show_numbers = "relative",
+	show_motion = true,
+	enter_mode = "first",
 })
