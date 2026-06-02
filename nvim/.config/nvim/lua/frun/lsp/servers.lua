@@ -12,6 +12,17 @@ return {
     -- But for many setups, the LSP (`ts_ls`) will work just fine
     -- ts_ls = {},
     --
+    svlangserver = {
+        filetypes = { "verilog", "systemverilog" },
+        settings = {
+            systemverilog = {
+                includeIndexing     = { "*.{v,vh,sv,svh}", "**/*.{v,vh,sv,svh}" },
+                excludeIndexing     = { "test/**/*.sv", "compile/**/*.sv" },
+                linter              = "verilator", 
+                launchConfiguration = "verilator -sv -Wall --lint-only",
+            }
+        }
+    },
 
     html = {},
     lua_ls = {

@@ -1,17 +1,17 @@
 [[plugin.deps]]
 use = "imsi32/yatline"
-rev = "88bd1c5"
-hash = "981acbe9b758b1af3a8154c932bb936d"
+rev = "3227a30"
+hash = "8bd477fb2deadf9c00f28f8e7669834b"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "e95c7b3"
-hash = "63b6c222bf2103b3023389dde5e2ecfe"
+rev = "de33976"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "e95c7b3"
-hash = "1adc12c2b2b025411ab61eb8f0879574"
+rev = "de33976"
+hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "dedukun/relative-motions"
