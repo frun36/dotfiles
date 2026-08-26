@@ -36,6 +36,7 @@ export EDITOR=nvim
 
 # Aliases and abbreviations
 alias ls="ls --color"
+alias lg="lazygit"
 
 alias ssh="kitten ssh"
 

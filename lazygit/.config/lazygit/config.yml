@@ -1,0 +1,27 @@
+git:
+  commit:
+    signOff: true
+  diffRenderers:
+    - colorArg: always
+      command: >
+        delta --paging=never 
+        --tabs 2
+        --syntax-theme=ansi 
+        --file-style="magenta"
+        --file-decoration-style="magenta ul"
+        --hunk-header-decoration-style=none 
+        --hunk-header-style="file line-number syntax"
+        --line-numbers
+        --line-numbers-left-format="{nm:>3} "
+        --line-numbers-right-format="{np:>3} "
+        --line-numbers-zero-style="dim"
+os:
+  editPreset: "nvim"
+gui:
+  switchTabsWithPanelJumpKeys: true
+  showNumstatInFilesView: true
+  expandFocusedSidePanel: true
+  nerdFontsVersion: "3"
+  filterMode: fuzzy
+notARepository: skip
+promptToReturnFromSubprocess: false
